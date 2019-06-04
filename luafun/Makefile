@@ -24,6 +24,7 @@ define Package/$(PKG_NAME)
 	CATEGORY:=Languages
 	TITLE:=$(PKG_NAME)
 	MAINTAINER:=Marcos Gutierrez <gmarcos@altermundi.net>
+	DEPENDS:=
 	PKGARCH:=all
 endef
 
