@@ -6,15 +6,16 @@
 
 include $(TOPDIR)/rules.mk
 
-GIT_COMMIT_DATE:=$(shell git log -n 1 --pretty=%ad --date=short . )
-GIT_COMMIT_TSTAMP:=$(shell git log -n 1 --pretty=%at . )
-
 PKG_NAME:=luafun
-PKG_VERSION=$(GIT_COMMIT_DATE)-$(GIT_COMMIT_TSTAMP)
+PKG_VERSION:=0.14
+PKG_RELEASE:=1
+PKG_MAINTAINER:=Marcos Gutierrez <gmarcos@altermundi.net>
+PKG_LICENSE:=MIT
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/luafun/luafun.git
 PKG_SOURCE_VERSION:=e248e007be4d3474224277f6ba50f53d4121bfe0
+PKG_BUILD_DIR:=$(BUILD_DIR)/
 
 include $(INCLUDE_DIR)/package.mk
 
