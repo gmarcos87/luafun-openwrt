@@ -21,8 +21,9 @@ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-	SECTION:=lib
-	CATEGORY:=Libraries
+	SUBMENU:=Lua
+	SECTION:=lang
+	CATEGORY:=Languages
 	TITLE:=$(PKG_NAME)
 	MAINTAINER:=Marcos Gutierrez <gmarcos@altermundi.net>
 	PKGARCH:=all
